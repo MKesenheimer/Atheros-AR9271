@@ -15,9 +15,9 @@ private:
     task_t                          m_task;
     com_gubawang_AR9271_CleanAtheros* m_driver;
 public:
-    virtual override bool init(OSDictionary *dictionary = 0);
-    virtual override void free(void);
-    virtual override IOService *probe(IOService *provider, SInt32 *score);
-    virtual override bool start(IOService *provider);
-    virtual override void stop(IOService *provider);
+    virtual bool init(OSDictionary *dictionary = 0);
+    virtual void free(void);
+    virtual IOService *probe(IOService *provider, SInt32 *score);
+    virtual bool start(IOService *provider);
+    virtual void stop(IOService *provider);
 };
