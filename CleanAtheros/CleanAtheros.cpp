@@ -146,7 +146,7 @@ bool com_gubawang_AR9271_CleanAtheros::getFunctionalDescriptors()
     {
         IOLog("CleanAtheros::No descriptors\n");
 //        funcDesc = (const FunctionalDescriptorHeader *)fInterface->FindNextDescriptor((void*)funcDesc, CS_INTERFACE);
-        funcDesc = (const FunctionalDescriptorHeader *)StandardUSB::getNextDescriptorWithType(fInterface->getConfigurationDescriptor(), (const Descriptor *)funcDesc, CS_INTERFACE);
+        funcDesc = (const FunctionalDescriptorHeader *) StandardUSB::getNextDescriptorWithType(fInterface->getConfigurationDescriptor(), (const Descriptor *) funcDesc, CS_INTERFACE);
         
         if (!funcDesc)
         {

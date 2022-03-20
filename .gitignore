@@ -1,2 +1,6 @@
 CleanAtheros.xcodeproj/xcuserdata
 CleanAtheros.xcodeproj/project.xcworkspace/xcuserdata
+.DS_Store
+Build
+DerivedData
+Other
